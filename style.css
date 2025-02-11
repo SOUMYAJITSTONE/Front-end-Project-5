@@ -195,28 +195,35 @@ body{
     object-fit: cover;
     /* object-position: center; */
 }
-.box-bottom{
+.box-bottom {
     height: 30%;
     width: 100%;
-    background: linear-gradient(transparent,rgba(0, 0, 0, 0.637));
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.637));
     position: absolute;
-    bottom:-30%;
+    bottom: -30%;
     transition: all ease 0.5s;
     color: white;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 0 20px;
-}
-
-.box-bottom i{
+    justify-content: space space-between; /* Changed from space-between */
+    padding: 0 15px;
+    gap: 53%;
+  }
+  
+  .icons-container {
+    display: flex;
+    gap: 15px; /* Adds space between icons */
+    
+  }
+  
+  .box-bottom i {
     background-color: #fff;
     padding: 8px 9px;
     color: #000;
     border-radius: 50%;
     font-size: 19px;
     font-weight: 500;
-}
+  }
 .box-bottom h5{
     font-size: 18px;
 }
