@@ -25,6 +25,7 @@ body{
     align-items: center;
     justify-content: space-between;
     padding: 0 40px;
+    cursor: pointer;
 }
 #nav-part1{
     width: 27%;
@@ -53,6 +54,7 @@ body{
      background-color: black;
      color: #fff;
      margin: 0 10px;
+     cursor: pointer;
 }
 #nav-part2 button:nth-child(1){
     background-color: transparent;
@@ -158,13 +160,12 @@ body{
     background-color: black;
     color: #fff;
 }
-#page2{
-    height: 100%;
+#page2 {
     width: 100%;
-    /* background-color: red; */
     position: relative;
     padding: 70px; 
     padding-top: 80px;
+    margin-bottom: 50px; /* Ensure spacing between page2 and page3 */
 }
 #page2 h1{
     text-align: center;
@@ -207,7 +208,7 @@ body{
     align-items: center;
     justify-content: space space-between; /* Changed from space-between */
     padding: 0 15px;
-    gap: 53%;
+    gap: 50%;
   }
   
   .icons-container {
@@ -233,3 +234,325 @@ body{
 .box:hover{
     box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.235);
 }
+#page3 {
+    height: 55%;
+    width: 100%;
+    background-color: #FDD66D;
+    text-align: center;
+    padding: 50px;
+}
+#page3 h1{
+    font-size: 75px;
+    font-weight: 500;
+    margin-bottom: 25px;
+    line-height: 110%;
+    font-family: "Source Serif 4";
+}
+#page3 h2{
+    font-size: 22px;
+    color: #373737;
+    max-width: 700px;
+    margin: 0 auto 25px;
+    font-weight: 500;
+    /* margin-top: 20px; */
+}
+#page3 .buttons{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 25px;
+}
+#page3 .btn{
+    padding: 18px 30px;
+    font-size: 18px;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+#page3 .btn-dark {
+    background-color: black;
+    color: white;
+}
+#page3 .footer {
+    margin-top: 30px;
+    font-size: 16px;
+}
+#page3 .footer p {
+    font-size: 21px;
+}
+#page3 .footer a {
+    color: black;
+    font-weight: bold;
+    font-size: 21px;
+    text-decoration: none;
+}
+#page3 .footer a:hover {
+    text-decoration: underline;
+}
+
+#page4{
+    height: 30%;
+    width: 100%;
+    padding: 20px 40px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.page4-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.logo img {
+    width: 160px; 
+    height: 150px; /* Adjust the size of the Dribbble logo */
+}
+
+.page4-nav a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    margin: 0 12px;
+    font-size: 20px;
+}
+.social-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* gap: 1px; */
+    margin-top: 20px;
+    font-size: 18px;
+    /* font-weight: bold; */
+    /* color: gray; */
+    text-decoration: none;
+    cursor: pointer;
+    padding-left: 2%;
+}
+
+.social-icons i {
+    margin: 20px 5px;
+    font-size: 28px;
+    width: 50px;
+    height: 50px;
+}
+
+
+
+.page4-bottom {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    font-size: 19px;
+    color: gray;
+}
+
+.page4-links a, .extra-links a {
+    text-decoration: none;
+    color: gray;
+    margin: 0 10px;
+}
+
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    #content h1 {
+      font-size: 60px;
+      line-height: 65px;
+    }
+  }
+  
+  @media (max-width: 1200px) {
+    #nav {
+      padding: 0 25px;
+      height: 90px;
+    }
+    
+    #nav-part1 {
+      width: 35%;
+    }
+    
+    #nav img {
+      height: 120px;
+    }
+    
+    #content h1 {
+      font-size: 50px;
+      line-height: 55px;
+    }
+    
+    .box {
+      width: 100%;
+      margin: 15px 0;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    #nav {
+      padding: 0 20px;
+      height: 80px;
+    }
+    
+    #nav-part1 {
+      width: 45%;
+    }
+    
+    #nav-part1 h4 {
+      font-size: 14px;
+    }
+    
+    #nav-part2 button {
+      padding: 12px 18px;
+      font-size: 14px;
+    }
+    
+    #content {
+      padding-top: 60px;
+    }
+    
+    #content h1 {
+      font-size: 40px;
+      line-height: 45px;
+      margin: 15px 0;
+    }
+    
+    #content h4 {
+      font-size: 18px;
+    }
+    
+    #content button {
+      padding: 16px 20px;
+      font-size: 16px;
+    }
+    
+    #page2 {
+      padding: 40px 20px;
+    }
+    
+    #page2 h1 {
+      font-size: 45px;
+    }
+    
+    #page3 h1 {
+      font-size: 50px;
+    }
+    
+    #page3 h2 {
+      font-size: 18px;
+      max-width: 90%;
+    }
+    
+    .page4-nav a {
+      font-size: 16px;
+      margin: 0 8px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    #nav {
+      flex-direction: column;
+      height: auto;
+      padding: 15px 20px;
+    }
+    
+    #nav-part1, #nav-part2 {
+      width: 100%;
+      justify-content: center;
+      margin: 10px 0;
+    }
+    
+    #nav-part1 h4 {
+      margin: 0 10px;
+    }
+    
+    #nav img {
+      height: 100px;
+    }
+    
+    #content h1 {
+      font-size: 32px;
+      line-height: 38px;
+    }
+    
+    #content h3 {
+      font-size: 16px;
+      left: 50%;
+    }
+    
+    .elem {
+      width: 280px;
+    }
+    
+    #page3 {
+      padding: 40px 20px;
+    }
+    
+    #page3 h1 {
+      font-size: 40px;
+    }
+    
+    #page3 .buttons {
+      flex-direction: column;
+    }
+    
+    #page3 .btn {
+      width: 100%;
+    }
+    
+    .page4-top {
+      flex-direction: column;
+    }
+    
+    .page4-nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+    }
+    
+    .page4-bottom {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .page4-links, .extra-links {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+    }
+  }
+  
+  @media (max-width: 400px) {
+    #nav-part1 h4 {
+      font-size: 12px;
+    }
+    
+    #nav-part2 button {
+      padding: 10px 15px;
+      margin: 0 5px;
+    }
+    
+    #content h1 {
+      font-size: 28px;
+      line-height: 32px;
+    }
+    
+    #page2 h1 {
+      font-size: 35px;
+    }
+    
+    #page3 h1 {
+      font-size: 32px;
+    }
+    
+    .social-icons i {
+      font-size: 24px;
+      margin: 10px 5px;
+    }
+  }
